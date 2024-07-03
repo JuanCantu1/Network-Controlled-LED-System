@@ -18,6 +18,7 @@ The network-controlled LED system utilizes a client-server architecture for comm
 The diagram below shows how commands sent over the network from the computer are received by the server program on the HPS. The program parses the commands and sends control signals to the FPGA logic, which activates or deactivates LEDs on the board. 
 
 ![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/d2b4b72c-374f-4f69-957b-1ab3f59e15fc)
+<p style="text-align: center;">Figure 1. High Level Design</p>
 
 The system leverages the TCP/IP protocol suite for reliable network communication. TCP, Transmission Control Protocol, establishes a connection between the client and server, ensuring data arrives in the correct order and without errors. Here is a simple breakdown of the TCP communication flow:
 
@@ -28,6 +29,7 @@ The system leverages the TCP/IP protocol suite for reliable network communicatio
 -	Connection Termination: Once communication is complete, the client and the server initiate a connection termination sequence, closing the connection.
 
   ![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/fa695163-6649-4d27-be10-44dfa672e6ec)
+<p style="text-align: center;">Figure 2. Network Communication Flow</p>
 
 In this diagram we see, the client sends commands to the server using TCP and the server processes these commands and sends back a confirmation to the client.
 
