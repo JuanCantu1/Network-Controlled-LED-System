@@ -15,7 +15,7 @@ The network-controlled LED system utilizes a client-server architecture for comm
 
 -	HPS Server Program: This program runs on the ARM processor core of the DE1-SoC acts as the server. It listens for incoming connections on a specific port, parses received commands from the client, and interacts with the FPGA logic to control the LEDs. The server program also sends confirmation messages back to the client for successful command execution.
 
-The block diagram below shows how commands sent over the network from the computer are received by the server program on the HPS. The program parses the commands and sends control signals to the FPGA logic, which activates or deactivates LEDs on the board. 
+The diagram below shows how commands sent over the network from the computer are received by the server program on the HPS. The program parses the commands and sends control signals to the FPGA logic, which activates or deactivates LEDs on the board. 
 
 ![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/d2b4b72c-374f-4f69-957b-1ab3f59e15fc)
 
@@ -31,7 +31,8 @@ The system leverages the TCP/IP protocol suite for reliable network communicatio
 
 In this diagram we see, the client sends commands to the server using TCP and the server processes these commands and sends back a confirmation to the client.
 
-
+# Implementation 
+This section will show The implementation of the system.
 
 # Demonstation 
 
