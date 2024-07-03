@@ -77,6 +77,6 @@ Figure 5 shows us the results on the board. We see that once receiving the comma
 # Conclusion
 This project successfully demonstrated the implementation of a network-controlled LED system using the DE1-SoC board, showcasing the integration of network communication protocols with hardware control. By leveraging both the FPGA and ARM processor on the DE1-SoC, we achieved a seamless client-server interaction that allowed remote control of the board's LEDs via TCP/IP commands. Overall, the project illustrates the potential of network-based control systems in industrial and automation applications, where remote device control is critical. The successful execution of this project underscores the importance of combining theoretical knowledge with practical implementation to solve real-world engineering challenges.
 
-# Demonstation 
+# Demonstration 
 
 https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/245d2584-dca9-4737-8c14-c83175a772fb
