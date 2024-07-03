@@ -35,7 +35,6 @@ The system leverages the TCP/IP protocol suite for reliable network communicatio
 <p align="center">
   <img src="https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/fa695163-6649-4d27-be10-44dfa672e6ec" alt="Network Communication Flow">
 </p>
-
 <p align="center">
   Figure 2. Network Communication Flow
 </p>
