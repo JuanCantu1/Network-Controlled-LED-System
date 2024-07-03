@@ -20,7 +20,6 @@ The diagram below shows how commands sent over the network from the computer are
 <p align="center">
   <img src="https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/d2b4b72c-374f-4f69-957b-1ab3f59e15fc" alt="High Level Design">
 </p>
-
 <p align="center">
   Figure 1. High Level Design
 </p>
