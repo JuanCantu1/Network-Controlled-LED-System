@@ -43,7 +43,28 @@ The system leverages the TCP/IP protocol suite for reliable network communicatio
 In this diagram we see, the client sends commands to the server using TCP and the server processes these commands and sends back a confirmation to the client.
 
 # Implementation 
-This section will show The implementation of the system.
+To get the server program onto the DE1-SoC I had to connect the SoC board to my home router. By doing this it connected the board to my LAN (Local Area Network). Once connected to the LAN, I used Secure Copy Protocol (SCP) to transfer the server program from my desktop computer to the board. SCP is a network protocol that allows file transfer between hosts on a network. It is based on the Secure Shell (SSH) protocol, which allows for the operation of network services over an insecure network. OpenSSH developers recommend using more modern protocols like SFTP (Secure File Transfer Protocol) however, for our problem SCP works.
+
+![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/85c64951-2a4f-4b4b-a1de-b95cc39cac94)
+Figure 3. SCP to De1SoC
+
+In Figure 3, we see SCP being used to transfer server.py over to the De1SoC. Now that sever.py is successfully transferred to the DE1SoC we can host the server on the board. 
+Now, we can connect to the server on any device on the network using the Client.py file. The Client.py script allows users to establish a connection with the server running on the DE1-SoC board, send commands to control the LEDs remotely, and receive confirmation from the server about the status of the commands sent.
+
+![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/c78a42fc-fe66-4a27-9c4d-8e626ba68765)
+Figure 4. Client-Sever Interaction
+
+In Figure 4, we see the client and server interacting with each other. We see the established TCP connection where the client initiates a connection request to the server on a specific TCP port. The server acknowledges the request, and a connection is established.  The client then sends control commands as data packets over the established connection. The server receives these packets and acknowledges their receipt. Once communication is complete, the client and the server initiate a connection termination sequence, closing the connection.
+
+Figure 4 shows us the client sending the command 1 and 3 which turns LED1 and LED3 on the DE1-SoC. Below is the result of these commands on the board. 
+
+![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/6147dc73-3555-441f-9d9d-bf2c58ece583)
+Figure 5. De1-SoC Results
+
+Figure 5 shows us the results on the board. We see that once receiving the commands from the client, the server correctly tells the board to turn LED1 and LED3 on. Through this implementation, the project successfully demonstrates the remote control of hardware components via network commands, providing hands-on experience with network programming, hardware-software integration, and the practical application of these concepts in real-world scenarios.
+
+# Conclusion
+This project successfully demonstrated the implementation of a network-controlled LED system using the DE1-SoC board, showcasing the integration of network communication protocols with hardware control. By leveraging both the FPGA and ARM processor on the DE1-SoC, we achieved a seamless client-server interaction that allowed remote control of the board's LEDs via TCP/IP commands. Overall, the project illustrates the potential of network-based control systems in industrial and automation applications, where remote device control is critical. The successful execution of this project underscores the importance of combining theoretical knowledge with practical implementation to solve real-world engineering challenges.
 
 # Demonstation 
 
