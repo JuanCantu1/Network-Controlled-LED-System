@@ -17,9 +17,13 @@ The network-controlled LED system utilizes a client-server architecture for comm
 
 The diagram below shows how commands sent over the network from the computer are received by the server program on the HPS. The program parses the commands and sends control signals to the FPGA logic, which activates or deactivates LEDs on the board. 
 
-![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/d2b4b72c-374f-4f69-957b-1ab3f59e15fc)
+<p align="center">
+  <img src="https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/d2b4b72c-374f-4f69-957b-1ab3f59e15fc" alt="High Level Design">
+</p>
 
-Figure 1. High Level Design
+<p align="center">
+  Figure 1. High Level Design
+</p>
 
 The system leverages the TCP/IP protocol suite for reliable network communication. TCP, Transmission Control Protocol, establishes a connection between the client and server, ensuring data arrives in the correct order and without errors. Here is a simple breakdown of the TCP communication flow:
 
@@ -29,9 +33,13 @@ The system leverages the TCP/IP protocol suite for reliable network communicatio
 
 -	Connection Termination: Once communication is complete, the client and the server initiate a connection termination sequence, closing the connection.
 
-![image](https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/fa695163-6649-4d27-be10-44dfa672e6ec)
+<p align="center">
+  <img src="https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/fa695163-6649-4d27-be10-44dfa672e6ec" alt="Network Communication Flow">
+</p>
 
-Figure 2. Network Communication Flow
+<p align="center">
+  Figure 2. Network Communication Flow
+</p>
 
 In this diagram we see, the client sends commands to the server using TCP and the server processes these commands and sends back a confirmation to the client.
 
@@ -41,4 +49,3 @@ This section will show The implementation of the system.
 # Demonstation 
 
 https://github.com/JuanCantu1/Network-Controlled-LED-System/assets/109363196/245d2584-dca9-4737-8c14-c83175a772fb
-
